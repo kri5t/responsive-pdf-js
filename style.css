@@ -10,3 +10,20 @@
     padding: 6px;
     text-align: center;
 }
+
+#right,
+#left{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+#left{
+    left: 0;
+}
+
+#right{
+    right: 0;
+}

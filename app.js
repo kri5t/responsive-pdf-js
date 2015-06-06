@@ -145,14 +145,25 @@
 		}
 	}
 
-	if(Modernizr.touchevents){
-		attachSwipeEvents();
-	}
-
-	document.onkeydown = checkKey;
-	window.onresize = _.debounce(function(){
+	var resize = _.debounce(function(){
 		interaction.textContent = "resize";
 		renderPage();
 	}, 500);
+
+	(function attachEvents(){
+		function mouseEvents(){
+			document.getElementById("left").onclick = turnPageLeft;
+			document.getElementById("right").onclick = turnPageRight;
+		}
+
+		document.onkeydown = checkKey;
+		window.onresize = resize;
+
+		if(Modernizr.touchevents){
+			attachSwipeEvents();
+		} else {
+			mouseEvents();
+		}
+	})();
 
 })(document, window, _, PDFJS);
