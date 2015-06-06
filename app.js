@@ -1,7 +1,7 @@
 /**
  * Created by kristian on 06/06/15.
  */
-;(function(document, window, _){
+;(function(document, window, _, PDFJS){
 	'use strict';
 
 	var url = './test.pdf';
@@ -155,4 +155,4 @@
 		renderPage();
 	}, 500);
 
-})(document, window, _);
+})(document, window, _, PDFJS);
