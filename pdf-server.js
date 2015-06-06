@@ -38,7 +38,7 @@ if (argv.h || argv.help) {
 	process.exit();
 }
 
-var port = argv.p || parseInt(process.env.PORT, 10),
+var port = parseInt(process.env.PORT, 10),
 	host = argv.a || '0.0.0.0',
 	log = (argv.s || argv.silent) ? (function () {}) : console.log,
 	ssl = !!argv.S || !!argv.ssl,
