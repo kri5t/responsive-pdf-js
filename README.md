@@ -1,2 +1,2 @@
 # responsive-pdf-js
-A responsive implmentation of the pdf.js library
+A responsive implementation of the pdf.js library
