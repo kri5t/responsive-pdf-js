@@ -27,3 +27,17 @@
 #right{
     right: 0;
 }
+
+canvas{
+    display: block;
+}
+
+.stopwatch-wrapper{
+    position: absolute;
+    right: 20px;
+    top: 70px;
+}
+
+.stopwatch{
+    display: inline-block;
+}

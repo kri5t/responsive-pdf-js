@@ -8,15 +8,28 @@
 </head>
 <body>
     <div id="interaction"></div>
+    <div class="stopwatch-wrapper">Rendering time: <div class="stopwatch"></div></div>
     <div class="canvas-wrapper">
         <canvas id="reader"></canvas>
-        <div id="left"></div>
-        <div id="right"></div>
+        <!--<div id="left"></div>-->
+        <!--<div id="right"></div>-->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.9.3/lodash.min.js"></script>
     <script src="modernizr.custom.39418.js"></script>
     <script src="build/pdf.js"></script>
     <!--<script src="build/pdf.worker.js"></script>-->
+    <script src="Stopwatch.js"></script>
     <script src="app.js"></script>
+<script>
+    (function(window){
+    	'use strict';
+        var elems = document.getElementsByClassName("stopwatch");
+        window.kri5t = {};
+        for (var i=0, len=elems.length; i<len; i++) {
+            window.kri5t.stopWatch = new Stopwatch(elems[i]);
+            window.kri5t.stopWatch.start();
+        }
+    })(window);
+</script>
 </body>
 </html>
