@@ -65,6 +65,7 @@
     "ecstatic": "~0.7.0",
     "http-proxy": "^1.8.1",
     "jquery": "^2.2.4",
+    "lodash": "^4.13.1",
     "opener": "~1.4.0",
     "optimist": "0.6.x",
     "pdfjs-dist": "^1.5.264",
