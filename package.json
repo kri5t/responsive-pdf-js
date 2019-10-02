@@ -83,7 +83,7 @@
     "expose-loader": "^0.7.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
-    "request": "2.49.x",
+    "request": "2.88.x",
     "style-loader": "^0.13.1",
     "stylezero": "2.2.0",
     "vows": "0.7.x",
