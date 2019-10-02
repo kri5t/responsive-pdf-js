@@ -62,7 +62,7 @@
   "dependencies": {
     "colors": "1.0.3",
     "corser": "~2.0.0",
-    "ecstatic": "2.0.0",
+    "ecstatic": "4.1.2",
     "http-proxy": "^1.8.1",
     "jquery": "3.0.0",
     "lodash": "^4.13.1",
